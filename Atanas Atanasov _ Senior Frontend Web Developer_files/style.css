@@ -1,0 +1,585 @@
+body {
+	/* prettier-ignore */
+	--data: (
+		projects: [
+			{
+				href: 'https://scriptex.js.org/2048/',
+				name: '2048'
+			},
+			{
+				href: 'https://scriptex.js.org/AnimateMe/',
+				name: 'Animate Me'
+			},
+			{
+				href: 'https://scriptex.js.org/async-array-prototype/',
+				name: 'Async Array Prototype'
+			},
+			{
+				href: 'https://scriptex.js.org/at-the-wall/',
+				name: 'At the Wall'
+			},
+			{
+				href: 'https://scriptex.js.org/atanas.info/',
+				name: 'atanas.info'
+			},
+			{
+				href: 'https://scriptex.js.org/best-resorts-in-bulgaria/',
+				name: 'Best Resorts in Bulgaria'
+			},
+			{
+				href: 'https://scriptex.js.org/awesome-useless-websites/',
+				name: 'Awesome Useless Websites'
+			},
+			{
+				href: 'https://scriptex.js.org/calendar-widget/',
+				name: 'Calendar Widget'
+			},
+			{
+				href: 'https://scriptex.js.org/create-pwa/',
+				name: 'Create PWA'
+			},
+			{
+				href: 'https://scriptex.js.org/css-diagnostics/',
+				name: 'CSS Diagnostics'
+			},
+			{
+				href: 'https://scriptex.js.org/dator/',
+				name: 'Dator'
+			},
+			{
+				href: 'https://scriptex.js.org/deno-rest-api/',
+				name: 'Deno REST API'
+			},
+			{
+				href: 'https://scriptex.js.org/express-watch-file/',
+				name: 'Express Watch File'
+			},
+			{
+				href: 'https://scriptex.js.org/github-contributions-snake/',
+				name: 'Github Contributions Snake'
+			},
+			{
+				href: 'https://scriptex.js.org/github-insights/',
+				name: 'Github Insights'
+			},
+			{
+				href: 'https://scriptex.js.org/github-pages-vuepress/',
+				name: 'Github Pages VuePress'
+			},
+			{
+				href: 'https://scriptex.js.org/hilarious-css/',
+				name: 'Hilarious CSS'
+			},
+			{
+				href: 'https://scriptex.js.org/hover-media-query/',
+				name: 'Hover Media Query'
+			},
+			{
+				href: 'https://scriptex.js.org/html5-form-validator/',
+				name: 'HTML5 Form Validator'
+			},
+			{
+				href: 'https://scriptex.js.org/html-head-component/',
+				name: 'HTML Head Component'
+			},
+			{
+				href: 'https://scriptex.js.org/initial-commit/',
+				name: 'Initial Commit'
+			},
+			{
+				href: 'https://scriptex.js.org/itcss/',
+				name: 'ITCSS'
+			},
+			{
+				href: 'https://scriptex.js.org/itcss-emmet-snippets/',
+				name: 'ITCSS Emmet Snippets'
+			},
+			{
+				href: 'https://scriptex.js.org/itscss/',
+				name: 'ITSCSS'
+			},
+			{
+				href: 'https://scriptex.js.org/IntroScroll/',
+				name: 'Intro Scroll'
+			},
+			{
+				href: 'https://scriptex.js.org/lastfm-ts-api/',
+				name: 'Last FM TS API'
+			},
+			{
+				href: 'https://scriptex.js.org/localga/',
+				name: 'Local GA'
+			},
+			{
+				href: 'https://scriptex.js.org/log/',
+				name: 'Log'
+			},
+			{
+				href: 'https://scriptex.js.org/material-snake/',
+				name: 'Material Snake'
+			},
+			{
+				href: 'https://scriptex.js.org/material-tetris/',
+				name: 'Material Tetris'
+			},
+			{
+				href: 'https://scriptex.js.org/no-html/',
+				name: 'No HTML'
+			},
+			{
+				href: 'https://scriptex.js.org/node-jimp-watermark/',
+				name: 'Node Jimp Watermark'
+			},
+			{
+				href: 'https://scriptex.js.org/node-rest-api/',
+				name: 'Node REST API'
+			},
+			{
+				href: 'https://scriptex.js.org/node-rest-example/',
+				name: 'Node REST Example'
+			},
+			{
+				href: 'https://scriptex.js.org/npm-maintainer/',
+				name: 'NPM Maintainer'
+			},
+			{
+				href: 'https://scriptex.js.org/npm-stats/',
+				name: 'NPM Stats'
+			},
+			{
+				href: 'https://scriptex.js.org/pass-score/',
+				name: 'Pass Score'
+			},
+			{
+				href: 'https://scriptex.js.org/postcss-watch-folder/',
+				name: 'PostCSS Watch Folder'
+			},
+			{
+				href: 'https://scriptex.js.org/random-splice/',
+				name: 'Random Splice'
+			},
+			{
+				href: 'https://scriptex.js.org/react-accordion-ts/',
+				name: 'React Accordion TS'
+			},
+			{
+				href: 'https://scriptex.js.org/react-dropper/',
+				name: 'Teact Dropper'
+			},
+			{
+				href: 'https://scriptex.js.org/react-round-carousel/',
+				name: 'React Round Carousel'
+			},
+			{
+				href: 'https://scriptex.js.org/react-svg-donuts/',
+				name: 'React SVG Donuts'
+			},
+			{
+				href: 'https://scriptex.js.org/round-carousel-component/',
+				name: 'Round Carousel'
+			},
+			{
+				href: 'https://scriptex.js.org/scriptex/',
+				name: 'Scriptex'
+			},
+			{
+				href: 'https://scriptex.js.org/scriptex.github.io/',
+				name: 'scriptex.github.io'
+			},
+			{
+				href: 'https://scriptex.js.org/scss-goodies/',
+				name: 'SCSS Goodies'
+			},
+			{
+				href: 'https://scriptex.js.org/socials/',
+				name: 'Socials'
+			},
+			{
+				href: 'https://scriptex.js.org/social-header/',
+				name: 'Social Header'
+			},
+			{
+				href: 'https://scriptex.js.org/svg64/',
+				name: 'SVG64'
+			},
+			{
+				href: 'https://scriptex.js.org/svgo-add-viewbox/',
+				name: 'SVGO Add Viewbox'
+			},
+			{
+				href: 'https://scriptex.js.org/svgo-viewbox/',
+				name: 'SVGO Viewbox'
+			},
+			{
+				href: 'https://scriptex.js.org/touchsweep/',
+				name: 'Touchsweep'
+			},
+			{
+				href: 'https://scriptex.js.org/ts-helpers/',
+				name: 'TS Helpers'
+			},
+			{
+				href: 'https://scriptex.js.org/typed-usa-states/',
+				name: 'Typed USA States'
+			},
+			{
+				href: 'https://scriptex.js.org/universal-github-client/',
+				name: 'Universal Github Client'
+			},
+			{
+				href: 'https://scriptex.js.org/uptime/',
+				name: 'Uptime'
+			},
+			{
+				href: 'https://scriptex.js.org/url-shortener/',
+				name: 'URL shortener'
+			},
+			{
+				href: 'https://scriptex.js.org/weather-app/',
+				name: 'Weather App'
+			},
+			{
+				href: 'https://scriptex.js.org/webpack-mpa/',
+				name: 'Webpack MPA'
+			},
+			{
+				href: 'https://scriptex.js.org/webpack-mpa-next/',
+				name: 'Webpack MPA Next'
+			},
+			{
+				href: 'https://scriptex.js.org/webpack-mpa-ts/',
+				name: 'Webpack MPA TS'
+			},
+			{
+				href: 'https://three11.github.io/accordion/',
+				name: 'Accordion'
+			},
+			{
+				href: 'https://three11.github.io/animate-top-offset/',
+				name: 'Animate Top Offset'
+			},
+			{
+				href: 'https://three11.github.io/debounce/',
+				name: 'Debounce'
+			},
+			{
+				href: 'https://three11.github.io/dom-helpers/',
+				name: 'DOM Helpers'
+			},
+			{
+				href: 'https://three11.github.io/email-template/',
+				name: 'Email Template'
+			},
+			{
+				href: 'https://three11.github.io/extract-query-arg/',
+				name: 'Extract Query Arg'
+			},
+			{
+				href: 'https://three11.github.io/infinite-scroll/',
+				name: 'Infinite Scroll'
+			},
+			{
+				href: 'https://three11.github.io/istouch',
+				name: 'Is Touch'
+			},
+			{
+				href: 'https://three11.github.io/optisize',
+				name: 'Optisize'
+			},
+			{
+				href: 'https://three11.github.io/react-template-ts/',
+				name: 'React Template TS'
+			},
+			{
+				href: 'https://three11.github.io/scrollspy/',
+				name: 'Scrollspy'
+			}
+		]
+	);
+	/* prettier-ignore */
+	--html: (
+	<input type="checkbox" id="menu" hidden />
+	<html-head-component src="meta.json" hidden></html-head-component>
+	<div class="title">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206 206"><g fill-rule="evenodd" transform="translate(3 3)"><circle fill="none" stroke-width="4" cx="100" cy="100" r="100"/><path stroke="none" d="m37.938 136.266 23.285-59.154 14.117 39.867 7.52 19.287h15.43L70.163 64H55.125L27 136.266m105.22 10.459v-9.327c-8.658-8.724-12.988-21.077-12.988-37.06 0-15.95 4.33-28.288 12.989-37.012V54c-8.073 4.492-14.462 10.905-19.165 19.238-4.704 8.334-7.056 17.367-7.056 27.1s2.393 18.831 7.178 27.295c4.785 8.463 11.133 14.827 19.043 19.092zm8.78 0c7.91-4.265 14.258-10.629 19.043-19.092 4.785-8.464 7.178-17.562 7.178-27.295s-2.352-18.766-7.056-27.1C155.461 64.905 149.073 58.492 141 54v9.326c8.659 8.724 12.988 21.061 12.988 37.012 0 15.983-4.33 28.336-12.988 37.06v9.327z"/></g></svg>
+		<label for="menu" aria-label="Open menu">Projects</label>
+		<h1>atanas atanasov (scriptex)</h1>
+		<h2>senior <br />javascript / typescript<br />engineer</h2>
+	</div>
+	<div class="activity">
+		<h3>Activity</h3>
+		<codersrank-activity
+			labels
+			legend
+			tooltip
+			branding="false"
+			username="scriptex"
+		></codersrank-activity>
+	</div>
+	<div class="education">
+		<h3>Education</h3>
+		<codersrank-education
+			grid
+			branding="false"
+			username="scriptex"
+			education-section-title="Schools"
+			certificates-section-title="Certificates"
+		></codersrank-education>
+	</div>
+	<div class="portfolio">
+		<h3>Portfolio</h3>
+		<codersrank-portfolio
+			grid
+			branding="false"
+			username="scriptex"
+		></codersrank-portfolio>
+	</div>
+	<div class="skills">
+		<h3>Skills</h3>
+		<codersrank-skills-chart
+			labels
+			legend
+			tooltip
+			branding="false"
+			username="scriptex"
+		></codersrank-skills-chart>
+	</div>
+	<div class="summary">
+		<h3>Summary</h3>
+		<codersrank-summary
+			username="scriptex"
+		></codersrank-summary>
+	</div>
+	<div class="work">
+		<h3>Work</h3>
+		<codersrank-work-experience
+			grid
+			logos
+			branding="false"
+			username="scriptex"
+		></codersrank-work-experience>
+	</div>
+	<div class="timeline">
+		<h3>Work Experience Timeline</h3>
+		<codersrank-timeline
+			type="workexperience"
+			branding="false"
+			username="scriptex"
+		></codersrank-timeline>
+	</div>
+	<div class="timeline">
+		<h3>Portfolio Timeline</h3>
+		<codersrank-timeline
+			type="portfolio"
+			branding="false"
+			username="scriptex"
+		></codersrank-timeline>
+	</div>
+	<div class="timeline">
+		<h3>Technologies Timeline</h3>
+		<codersrank-timeline
+			type="technologies"
+			branding="false"
+			username="scriptex"
+		></codersrank-timeline>
+	</div>
+	<br>
+	<social-links></social-links>
+	<div class="projects-list">
+		<label for="menu" aria-label="Close menu">&times;</label>
+	</div>
+	<div class="backdrop"></div>
+	);
+	/* prettier-ignore */
+	--js: (
+		const projects = document.querySelector('.projects-list');
+
+		data.projects.forEach(({ href, name }) => {
+			const a = document.createElement('a');
+
+			a.href = href;
+			a.innerHTML = name;
+
+			projects.appendChild(a);
+		});
+	)
+}
+
+:root {
+	--primary: #fff;
+	--secondary: #000;
+}
+
+html {
+	font-size: 1rem;
+}
+
+body {
+	font-family: monospace;
+	color: var(--primary);
+	padding: 1rem;
+	max-width: 1280px;
+	margin: auto;
+	background-color: var(--secondary);
+}
+
+h3 {
+	text-align: center;
+	margin: 0 0 1rem;
+}
+
+.title {
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.title svg {
+	width: 2rem;
+	height: 2rem;
+	display: block;
+	fill: var(--primary);
+	stroke: var(--primary);
+}
+
+.title h1,
+.title h2 {
+	flex: 0 0 100%;
+}
+
+.title h1 {
+	padding-top: 1rem;
+	border-top: 1px solid;
+	margin: 1rem 0 0;
+}
+
+.title h2 {
+	padding-bottom: 1rem;
+	border-bottom: 1px solid;
+	margin: 0;
+}
+
+.work,
+.skills,
+.summary,
+.activity,
+.timeline,
+.education,
+.portfolio {
+	padding: 1rem 0;
+	border-bottom: 1px solid;
+}
+
+label {
+	display: block;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+label:hover {
+	color: var(--secondary);
+	background-color: var(--primary);
+}
+
+codersrank-portfolio,
+codersrank-education,
+codersrank-work-experience {
+	--grid-columns: 3;
+}
+
+@media (max-width: 1024px) {
+	codersrank-portfolio,
+	codersrank-education,
+	codersrank-work-experience {
+		--grid-columns: 2;
+	}
+}
+
+@media (max-width: 768px) {
+	codersrank-portfolio,
+	codersrank-education,
+	codersrank-work-experience {
+		--grid-columns: 1;
+	}
+}
+
+.backdrop,
+.projects-list {
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+.projects-list {
+	width: 20rem;
+	height: 100%;
+	z-index: 100;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	background-color: var(--secondary);
+	transform: translateX(-100%);
+}
+
+.projects-list a {
+	color: inherit;
+	text-decoration: none;
+	display: block;
+	padding: 1rem;
+	border-top: 1px solid;
+}
+
+.projects-list a:hover {
+	color: var(--secondary);
+	background-color: var(--primary);
+}
+
+.projects-list label {
+	font-size: 1rem;
+	line-height: 1.5;
+	text-align: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-left: auto;
+}
+
+.backdrop {
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	background-color: var(--primary);
+	pointer-events: none;
+	transition: opacity;
+}
+
+#menu:checked ~ .backdrop {
+	opacity: 0.7;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+#menu:checked ~ .projects-list {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+}
+
+codersrank-timeline {
+	--timeline-item-bg-color: #333;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--primary: #000;
+		--secondary: #fff;
+	}
+
+	codersrank-timeline {
+		--timeline-item-bg-color: #ccc;
+	}
+}
