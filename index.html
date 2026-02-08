@@ -7,148 +7,187 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        .gradient-text { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .tech-tag { @apply px-2 py-0.5 bg-blue-50 text-blue-700 rounded text-[10px] font-bold uppercase tracking-wider border border-blue-100; }
+        .experience-card { @apply relative pl-8 border-l-2 border-slate-200 pb-10 last:pb-0; }
+        .experience-dot { @apply absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1 border-4 border-white; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 leading-relaxed">
 
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <header class="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-tight">BK<span class="text-blue-600">.</span></h1>
-            <nav class="space-x-6 text-sm font-medium">
-                <a href="mailto:khatribhupendra8@gmail.com" class="hover:text-blue-600 transition">Contact</a>
-                <a href="https://linkedin.com/in/bhupendra-khatri" class="hover:text-blue-600 transition">LinkedIn</a>
-                <a href="https://github.com/Khatribhu" class="hover:text-blue-600 transition">GitHub</a>
+            <h1 class="text-xl font-bold tracking-tighter">BK<span class="text-blue-600">.</span></h1>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-500">
+                <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                <a href="mailto:khatribhupendra8@gmail.com" class="text-blue-600">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-6 py-12">
-        <section class="mb-16">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Bhupendra Khatri</h2>
-            <p class="text-xl text-slate-600 max-w-3xl mb-8">
-                <span class="font-semibold text-slate-900">Senior/Staff Software Engineer</span> with 11+ years of experience architecting cloud-native Tier-0 platforms. Expert in high-scale <span class="text-blue-600">Kafka/GraphQL</span> orchestration, delivering massive reliability gains and multi-million dollar cost efficiencies.
+    <main class="max-w-5xl mx-auto px-6 py-16">
+        
+        <section class="mb-20">
+            <div class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold mb-4 uppercase tracking-widest">
+                Available for Staff/Senior Engineering Roles
+            </div>
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">Bhupendra Khatri</h2>
+            <p class="text-xl md:text-2xl text-slate-600 max-w-3xl mb-10 leading-relaxed">
+                <span class="text-slate-900 font-semibold">Senior Staff Software Engineer</span> with 11+ years of experience. I specialize in building <span class="text-blue-600">Tier-0 high-scale platforms</span>, optimizing distributed systems, and driving multi-million dollar architectural transformations.
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
-                    <p class="text-blue-700 font-bold text-2xl">70%</p>
-                    <p class="text-sm text-blue-600">Reduction in Alert Noise</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm text-center">
+                    <p class="text-2xl font-bold text-blue-600">$1M+</p>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase">Annual Savings</p>
                 </div>
-                <div class="bg-purple-50 p-4 rounded-xl border border-purple-100">
-                    <p class="text-purple-700 font-bold text-2xl">$1M+</p>
-                    <p class="text-sm text-purple-600">Cost Optimization Identified</p>
+                <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm text-center">
+                    <p class="text-2xl font-bold text-purple-600">70%</p>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase">Alert Reduction</p>
                 </div>
-                <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
-                    <p class="text-emerald-700 font-bold text-2xl">10x</p>
-                    <p class="text-sm text-emerald-600">Faster Diagnosis Time</p>
+                <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm text-center">
+                    <p class="text-2xl font-bold text-emerald-600">10x</p>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase">Faster Diagnosis</p>
+                </div>
+                <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm text-center">
+                    <p class="text-2xl font-bold text-orange-600">20+</p>
+                    <p class="text-[10px] font-bold text-slate-400 uppercase">Teams Led</p>
                 </div>
             </div>
         </section>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div class="lg:col-span-2 space-y-12">
-                <section>
-                    <h3 class="text-2xl font-bold mb-8 flex items-center">
-                        <i class="fas fa-briefcase mr-3 text-blue-600"></i> Experience
-                    </h3>
-                    
-                    <div class="relative pl-8 border-l-2 border-slate-200 mb-10">
-                        <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1"></div>
-                        <div class="mb-2 flex justify-between items-start">
-                            <div>
-                                <h4 class="text-xl font-bold">Senior Software Engineer</h4>
-                                <p class="text-blue-600 font-medium italic">Walmart Global Tech</p>
-                            </div>
-                            <span class="text-sm font-semibold bg-slate-200 px-3 py-1 rounded-full text-slate-700">2019 - Present</span>
+        <section id="experience" class="mb-20">
+            <h3 class="text-3xl font-bold mb-12 flex items-center">
+                <i class="fas fa-briefcase mr-4 text-blue-600"></i> Work Experience
+            </h3>
+
+            <div class="space-y-4">
+                <div class="experience-card">
+                    <div class="experience-dot"></div>
+                    <div class="flex flex-wrap justify-between items-start mb-6">
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-900">Senior Software Engineer</h4>
+                            <p class="text-blue-600 font-bold text-lg">Walmart Global Tech — Health & Wellness / Omni Tech</p>
                         </div>
-                        <ul class="text-slate-600 space-y-3 mt-4 list-disc ml-4">
-                            <li>Architected <strong>Tier-0 near real-time data platforms</strong>, streaming store data to cloud at multi-million scale using microservices and Kafka.</li>
-                            <li>Delivered low-latency, unified access to prescription and order data via a <strong>GraphQL data layer</strong>.</li>
-                            <li>Led cross-functional initiatives across <strong>20+ teams</strong>, owning rollout strategies and mentoring engineers.</li>
-                            <li>Architected end-to-end <strong>RxPD Fulfillment workflows</strong> and high-throughput microservices.</li>
-                        </ul>
+                        <span class="px-4 py-1 bg-slate-100 rounded-full text-sm font-bold text-slate-500">July 2019 — Present</span>
                     </div>
 
-                    <div class="relative pl-8 border-l-2 border-slate-200">
-                        <div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[9px] top-1"></div>
-                        <div class="mb-2 flex justify-between items-start">
-                            <div>
-                                <h4 class="text-xl font-bold text-slate-700">Software Engineer</h4>
-                                <p class="text-slate-500 font-medium italic">United Health Group</p>
+                    <div class="space-y-8">
+                        <div>
+                            <h5 class="text-slate-800 font-bold mb-3 flex items-center">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span> Tier-0 Modernization & Unified Data Layer
+                            </h5>
+                            <ul class="text-slate-600 text-sm space-y-3 ml-4 border-l border-slate-100 pl-4">
+                                <li><strong>Cloud Modernization:</strong> Enabled cloud-native transition for downstream domains by leading the architecture of a Tier-0 near real-time data platform, streaming store transactional/reference data to the cloud and eliminating legacy store dependencies.</li>
+                                <li><strong>Unified Data Access:</strong> Delivered real-time unified data access (Prescription, Order, Patient History) at multi-million transaction scale using <strong>Kafka eventing + GraphQL federation</strong>, significantly improving system consistency and developer experience.</li>
+                            </ul>
+                            <div class="flex gap-2 mt-3 ml-8">
+                                <span class="tech-tag">Kafka</span><span class="tech-tag">GraphQL</span><span class="tech-tag">Java Spring Boot</span><span class="tech-tag">Distributed Systems</span>
                             </div>
-                            <span class="text-sm font-semibold bg-slate-100 px-3 py-1 rounded-full text-slate-500">2018 - 2019</span>
                         </div>
-                        <ul class="text-slate-600 space-y-2 mt-4 list-disc ml-4">
-                            <li>Integrated <strong>Netflix Zuul API Gateway</strong> with custom filters for dynamic routing and SSO security.</li>
-                            <li>Implemented distributed tracing using <strong>Sleuth and Zipkin</strong>, improving microservices observability.</li>
+
+                        <div>
+                            <h5 class="text-slate-800 font-bold mb-3 flex items-center">
+                                <span class="w-2 h-2 bg-purple-400 rounded-full mr-2"></span> Architectural Governance & Orchestration
+                            </h5>
+                            <ul class="text-slate-600 text-sm space-y-3 ml-4 border-l border-slate-100 pl-4">
+                                <li><strong>RxPD Fulfillment:</strong> Architected end-to-end fulfillment workflows, optimized data orchestration, and established best-practice API usage patterns to ensure high throughput across fulfillment streams.</li>
+                                <li><strong>Consent Orchestrator:</strong> Provided architectural direction for the transformation of Consent Orchestrator from a standalone service to a <strong>unified platform</strong>, modernizing management and improving extensibility.</li>
+                                <li><strong>Cross-functional Leadership:</strong> Partnered with <strong>20+ teams</strong> to coordinate Connexus operations and Fill ID expansion, designing/executing rollout and rollback plans that minimized risk and ensured on-schedule delivery.</li>
+                            </ul>
+                            <div class="flex gap-2 mt-3 ml-8">
+                                <span class="tech-tag">Platform Design</span><span class="tech-tag">API Design</span><span class="tech-tag">Architecture Governance</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="text-slate-800 font-bold mb-3 flex items-center">
+                                <span class="w-2 h-2 bg-emerald-400 rounded-full mr-2"></span> Operational Excellence & Business Savings
+                            </h5>
+                            <ul class="text-slate-600 text-sm space-y-3 ml-4 border-l border-slate-100 pl-4">
+                                <li><strong>Financial Impact:</strong> Identified ~$1M annual savings via infra inefficiencies; delivered immediate <strong>$5.3K/month recurring</strong> reduction through utilization rationalization.</li>
+                                <li><strong>System Reliability:</strong> Reduced alert noise by <strong>60–70%</strong> and improved MTTR by <strong>40%+</strong> through automated performance SOPs and proactive monitoring.</li>
+                                <li><strong>Internal Tooling:</strong> Developed the <strong>RxPD Inspector Tool</strong>, a high-usability internal interface that reduced time-to-diagnosis by <strong>10x</strong> and streamlined order investigations.</li>
+                            </ul>
+                            <div class="flex gap-2 mt-3 ml-8">
+                                <span class="tech-tag">Prometheus/Grafana</span><span class="tech-tag">FinOps</span><span class="tech-tag">Observability</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-dot bg-slate-300"></div>
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h4 class="text-xl font-bold text-slate-700">Software Engineer</h4>
+                            <p class="text-slate-500 font-semibold">United Health Group</p>
+                        </div>
+                        <span class="text-sm font-bold text-slate-400 uppercase tracking-widest">Feb 2018 — July 2019</span>
+                    </div>
+                    <ul class="text-slate-500 text-sm space-y-2 ml-4">
+                        <li>Integrated <strong>Netflix Zuul API Gateway</strong> with custom filters for dynamic routing and SSO security via Redis/JWT.</li>
+                        <li>Implemented distributed tracing using <strong>Sleuth and Zipkin</strong>, speeding up debugging and strengthening microservices observability.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12" id="skills">
+            <div class="md:col-span-2">
+                <h3 class="text-2xl font-bold mb-8">Technical Proficiency</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div>
+                        <p class="text-xs font-bold text-slate-400 uppercase mb-4 tracking-widest">Backend & Cloud</p>
+                        <ul class="space-y-2 text-slate-700 font-medium">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Java / Spring Boot</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Kafka Event Streaming</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> GraphQL Federation</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> System Design & Microservices</li>
                         </ul>
                     </div>
-                </section>
-
-                <section>
-                    <h3 class="text-2xl font-bold mb-6 flex items-center">
-                        <i class="fas fa-award mr-3 text-blue-600"></i> Awards & Recognition
-                    </h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm">
-                            <p class="font-bold text-slate-800">Walmart Excellence Award</p>
-                            <p class="text-sm text-slate-500">2023, 2025 • Technical Leadership & DOM Service</p>
-                        </div>
-                        <div class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm">
-                            <p class="font-bold text-slate-800">Bravo Award</p>
-                            <p class="text-sm text-slate-500">2020, 2024, 2025</p>
-                        </div>
-                        <div class="p-4 bg-white border border-slate-200 rounded-lg shadow-sm">
-                            <p class="font-bold text-slate-800">FinOps Certified Engineer</p>
-                            <p class="text-sm text-slate-500">FinOps Foundation</p>
-                        </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-400 uppercase mb-4 tracking-widest">Observability & Tools</p>
+                        <ul class="space-y-2 text-slate-700 font-medium">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Prometheus / Grafana</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Splunk Monitoring</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> NoSQL (CosmosDB/Mongo)</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> FinOps Optimization</li>
+                        </ul>
                     </div>
-                </section>
+                </div>
             </div>
 
-            <div class="space-y-10">
-                <section>
-                    <h3 class="text-xl font-bold mb-6">Core Expertise</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded text-sm font-medium">Java Spring Boot</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded text-sm font-medium">Microservices</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded text-sm font-medium">System Design</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded text-sm font-medium">Distributed Systems</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded text-sm font-medium">Kafka</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded text-sm font-medium">GraphQL</span>
-                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded text-sm font-medium">NoSQL</span>
+            <div class="bg-slate-900 rounded-3xl p-8 text-white">
+                <h3 class="text-xl font-bold mb-6">Honors & Awards</h3>
+                <div class="space-y-6 text-sm">
+                    <div class="border-l-2 border-blue-500 pl-4">
+                        <p class="font-bold text-blue-400">Walmart Excellence Award</p>
+                        <p class="text-slate-400 italic">2023, 2025</p>
+                        <p class="mt-1 text-slate-300">For Technical Leadership in DOM Service and Cost Optimization.</p>
                     </div>
-                </section>
-
-                <section>
-                    <h3 class="text-xl font-bold mb-6">Observability</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-slate-200 text-slate-700 rounded text-sm font-medium">Prometheus</span>
-                        <span class="px-3 py-1 bg-slate-200 text-slate-700 rounded text-sm font-medium">Grafana</span>
-                        <span class="px-3 py-1 bg-slate-200 text-slate-700 rounded text-sm font-medium">Micrometer</span>
-                        <span class="px-3 py-1 bg-slate-200 text-slate-700 rounded text-sm font-medium">Splunk</span>
+                    <div class="border-l-2 border-slate-700 pl-4">
+                        <p class="font-bold">Bravo Awards</p>
+                        <p class="text-slate-400 italic">2020, 2024, 2025</p>
                     </div>
-                </section>
-
-                <section class="pt-6 border-t border-slate-200">
-                    <h3 class="text-xl font-bold mb-4">Education</h3>
-                    <p class="font-bold text-slate-800">B.Tech - NIT Jaipur</p>
-                    <p class="text-slate-500 text-sm italic">2011 — 2015</p>
-                </section>
-
-                <section class="p-6 bg-slate-900 rounded-2xl text-white">
-                    <h3 class="text-lg font-bold mb-2">Let's Connect</h3>
-                    <p class="text-slate-400 text-sm mb-4">Always open to discussing system design and high-scale architectures.</p>
-                    <a href="mailto:khatribhupendra8@gmail.com" class="block text-center bg-blue-600 py-2 rounded-lg font-bold hover:bg-blue-500 transition">Email Me</a>
-                </section>
+                    <div class="border-l-2 border-slate-700 pl-4">
+                        <p class="font-bold">FinOps Certified</p>
+                        <p class="text-slate-400">FinOps Foundation</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="py-12 border-t border-slate-200 text-center text-slate-400 text-sm">
-        &copy; 2024 Bhupendra Khatri. All rights reserved.
+    <footer class="bg-white border-t border-slate-200 py-12 text-center">
+        <p class="text-slate-400 text-sm mb-4 font-mono">BHUPENDRA KHATRI — 2025</p>
+        <div class="flex justify-center space-x-6">
+            <a href="https://linkedin.com/in/bhupendra-khatri" class="text-slate-400 hover:text-blue-600 transition"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://github.com/Khatribhu" class="text-slate-400 hover:text-slate-900 transition"><i class="fab fa-github fa-lg"></i></a>
+            <a href="mailto:khatribhupendra8@gmail.com" class="text-slate-400 hover:text-red-500 transition"><i class="fas fa-envelope fa-lg"></i></a>
+        </div>
     </footer>
 
 </body>
